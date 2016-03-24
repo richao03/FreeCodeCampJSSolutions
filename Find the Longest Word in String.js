@@ -4,7 +4,7 @@ Your response should be a number.
 
 function findLongestWord(sen) { 
 var longword = sen.split(" ")     //longward contains all the words in input sen, separated by a space
- longword.sort(function(a, b) {   // here, sort(function(a,b) { return b-a} is a often used method of sort to put things in order
+ longword.sort(function(a, b) {   // sort(function(a,b) { return b-a} is a often used method of sort to put the elements in                                                longword in order
                                   // sort ( function(a,b) { return a - b }) will return all elements in size order
                                   // sort ( function(a,b) { return b - a}) will return it in reverse size order (bigger first then small)
     return b.length - a.length;  // by adding .length to a and b, we are now asking to have elements in longword to be sorted
